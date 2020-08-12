@@ -1,0 +1,16 @@
+
+Hay principalmente dos tipos de vulnerabilidades buffer overflow: stack overflow y heap overflow.
+
+Funciones vulnerables a desbordamientos de Buffer Overflow, y sus alternativas funciones seguras
+(si existen):
+
+ -gets --> fgets() - lee caracteres
+ -strcpy() --> strncpy() - copia contenido del buffer
+ -strcat() --> strcat() - concatenación del buffer
+ -sprintf() --> snprintf() - llena el buffer con datos de diferentes tipos
+ -(f)scanf() - lee de STDIN
+ -getwd() - retorna el directorio de trabajo
+ -realpath() - retorna la ruta absoluta completa.
+
+Referencia:
+https://owasp.org/www-community/attacks/Buffer_overflow_attack
